@@ -8,7 +8,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "test": "ava && npm run lint",
+    "test": "npm run build && ava && npm run lint",
     "lint": "eslint . --ignore-path .gitignore && stylelint './src/app/**/*.css'",
     "fix": "eslint . --ignore-path .gitignore --fix && stylelint './src/app/**/*.css' --fix",
     "start": "run-p start:*",
