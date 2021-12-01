@@ -14,7 +14,7 @@ let app
 
 function ensureDistExists(t) {
   const exists = fs.existsSync(path.join(__dirname, '../../dist'))
-  console.log(fs.readdirSync(path.join(__dirname, '../..'))
+  console.log(fs.readdirSync(path.join(__dirname, '../..')))
   t.true(exists, 'dist directory must exist (try to run `npm run build`)')
 }
 
